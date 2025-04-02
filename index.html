@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Image Search App</title>
     <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-BfjKTZs6.js">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-CX4EDM7x.css">
@@ -12,20 +12,20 @@
   </head>
   <body>
     <header>
-      <form id="search-form">
+      <form class="form" id="search-form">
         <input
           type="text"
           name="searchQuery"
           placeholder="Search images..."
           autocomplete="off"
+          required
         />
         <button type="submit">Search</button>
       </form>
     </header>
     <main>
-      <div class="gallery"></div>
+      <ul class="gallery"></ul>
       <div class="loader"></div>
-      <span class="loader"></span>
     </main>
 
   </body>
